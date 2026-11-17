@@ -1,758 +1,617 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frederick Edem Apaloo | Author · Minister · Speaker</title>
-<meta name="description" content="Frederick Edem Apaloo — Author of The Eden Within, minister, and speaker. Teachings, devotionals, speaking invitations and more.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frederick E. Apaloo | Author of The Eden Within</title>
+<meta name="description" content="Frederick E. Apaloo is a minister, teacher and author of The Eden Within. Read the book, book a prayer or counseling session, or support the work.">
+<meta property="og:title" content="Frederick E. Apaloo | Author of The Eden Within">
+<meta property="og:description" content="Guard your heart. Guard your destiny. The Eden Within, a book by Frederick E. Apaloo.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://frederickapaloo.com/">
+<meta name="theme-color" content="#14251E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <style>
-:root {
-  --navy: #0A1628;
-  --navy-mid: #112240;
-  --navy-light: #1B3358;
-  --navy-pale: #E8EEF7;
-  --gold: #C9A84C;
-  --gold-light: #E8C97A;
-  --gold-pale: #FBF6EA;
-  --white: #FFFFFF;
-  --off-white: #F8F9FC;
-  --light-gray: #F0F2F7;
-  --mid-gray: #D8DCE8;
-  --text-dark: #0A1628;
-  --text-mid: #4A5568;
-  --text-light: #8896A8;
-  --serif: 'Playfair Display', Georgia, serif;
-  --sans: 'Inter', sans-serif;
-  --radius: 6px;
-  --shadow: 0 4px 20px rgba(10,22,40,0.08);
-  --shadow-lg: 0 12px 48px rgba(10,22,40,0.14);
+:root{
+  --moss:#14251E; --fig:#2F5D46; --leaf:#1B3A2B;
+  --dew:#EEF2EA; --mist:#DCE5D6; --gold:#D9A441; --bark:#2A2420;
+  --serif:"Newsreader",Georgia,serif; --sans:"Figtree",system-ui,sans-serif;
+  --gutter:clamp(20px,5vw,64px); --max:1140px;
 }
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body { background: var(--white); color: var(--text-dark); font-family: var(--sans); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
-::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--light-gray); }
-::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 3px; }
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--dew);color:var(--bark);font-family:var(--serif);font-size:1.15rem;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+p{margin:0 0 1.2em;max-width:62ch}
+h2{font-weight:500;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.1;letter-spacing:-.015em;margin:0 0 24px;max-width:20ch}
+section{padding:clamp(64px,9vw,112px) 0}
 
-/* ── NAV ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 999;
-  background: var(--navy); height: 66px;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 0 3rem; transition: box-shadow 0.3s;
+/* ---------- nav ---------- */
+.nav{position:sticky;top:0;z-index:30;background:rgba(20,37,30,.95);backdrop-filter:blur(8px);color:var(--dew)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-size:1.25rem;font-weight:500;text-decoration:none;letter-spacing:.01em;white-space:nowrap}
+.nav ul{display:flex;gap:clamp(18px,3vw,38px);list-style:none;margin:0;padding:0;font-family:var(--sans);font-size:.95rem;align-items:center}
+.nav a.link{text-decoration:none;opacity:.85;padding:6px 0;border-bottom:2px solid transparent}
+.nav a.link:hover{opacity:1;border-color:var(--gold)}
+.nav .pill{background:var(--gold);color:var(--moss);padding:8px 18px;border-radius:999px;font-weight:600;text-decoration:none}
+.nav .pill:hover{background:#e6b658}
+.menu-btn{display:none;background:none;border:1.5px solid rgba(238,242,234,.5);color:var(--dew);border-radius:8px;padding:6px 12px;font-family:var(--sans);font-size:.9rem}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:1rem;padding:14px 26px;border-radius:999px;text-decoration:none;border:2px solid var(--gold);transition:background .2s,color .2s;text-align:center}
+.btn.solid{background:var(--gold);color:var(--moss)}
+.btn.solid:hover{background:#e6b658;border-color:#e6b658}
+.btn.ghost{color:inherit;border-color:currentColor}
+.btn.ghost:hover{background:rgba(255,255,255,.1)}
+.btn.dark{background:var(--moss);border-color:var(--moss);color:var(--dew)}
+.btn.dark:hover{background:var(--fig);border-color:var(--fig)}
+.actions{display:flex;flex-wrap:wrap;gap:14px}
+
+/* ---------- image slots (image if it loads, designed placeholder if not) ---------- */
+.slot{margin:0;position:relative}
+.slot img{width:100%;height:100%;object-fit:cover}
+.slot .ph{display:none}
+.slot.empty img{display:none}
+.slot.empty .ph{display:flex}
+
+.cover{aspect-ratio:2/3;width:100%;max-width:300px;border-radius:4px 10px 10px 4px;box-shadow:0 30px 60px -20px rgba(0,0,0,.65),inset 6px 0 0 rgba(0,0,0,.18);overflow:hidden;background:var(--fig)}
+.cover .ph{position:absolute;inset:0;flex-direction:column;justify-content:space-between;padding:12% 10%;background:linear-gradient(160deg,var(--fig),var(--leaf));color:var(--dew)}
+.cover .ph b{font-weight:500;font-size:clamp(1.9rem,4vw,2.6rem);line-height:1;letter-spacing:-.01em}
+.cover .ph i{font-size:1rem;opacity:.8}
+.cover .ph small{font-family:var(--sans);font-size:.8rem;letter-spacing:.05em}
+.cover .ph::after{content:"";position:absolute;right:-20%;bottom:-18%;width:70%;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(217,164,65,.7),transparent 68%)}
+
+/* ---------- home slideshow ---------- */
+.show{position:relative;background:var(--moss);color:var(--dew);overflow:hidden}
+.show::before{content:"";position:absolute;width:min(90vw,860px);aspect-ratio:1;border-radius:50%;right:-16%;bottom:-52%;background:radial-gradient(circle at 50% 40%,rgba(217,164,65,.5),rgba(217,164,65,.1) 55%,transparent 70%);pointer-events:none}
+.slides{display:grid;position:relative}
+.slide{grid-area:1/1;opacity:0;visibility:hidden;transition:opacity .9s ease,visibility .9s;display:flex;align-items:center;min-height:min(78vh,680px)}
+.slide.active{opacity:1;visibility:visible}
+.slide .wrap{width:100%;padding-top:56px;padding-bottom:96px}
+.slide.has-photo{background-size:cover;background-position:center}
+.slide.has-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,37,30,.92),rgba(20,37,30,.35))}
+.slide.has-photo .wrap{position:relative}
+.s-book .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,6vw,80px);align-items:center}
+.s-book .cover{justify-self:center}
+.slide h1,.slide .big{font-weight:500;font-size:clamp(2.6rem,6.6vw,5.2rem);line-height:1.03;letter-spacing:-.02em;margin:0 0 22px;max-width:14ch}
+.slide .lead{font-size:clamp(1.2rem,2.2vw,1.5rem);max-width:30ch;opacity:.92;margin:0 0 32px}
+.slide blockquote{margin:0;max-width:20ch}
+.q{font-style:italic;font-weight:400;font-size:clamp(2rem,5vw,3.8rem);line-height:1.14;letter-spacing:-.015em;margin:0 0 24px;max-width:22ch}
+.q-cite{font-family:var(--sans);font-size:.95rem;color:var(--gold);display:block}
+.slide .btn{margin-top:4px}
+.controls{position:absolute;left:0;right:0;bottom:26px;z-index:5}
+.controls .wrap{display:flex;align-items:center;gap:18px}
+.dots{display:flex;gap:10px}
+.dot{width:34px;height:4px;border:0;padding:0;border-radius:2px;background:rgba(238,242,234,.3);position:relative}
+.dot[aria-current="true"]{background:var(--gold)}
+.arrows{margin-left:auto;display:flex;gap:10px}
+.arrow{width:42px;height:42px;border-radius:50%;border:1.5px solid rgba(238,242,234,.5);background:transparent;color:var(--dew);font-size:1.1rem;line-height:1}
+.arrow:hover{background:rgba(255,255,255,.12)}
+
+/* ---------- book ---------- */
+.book .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,88px);align-items:start}
+.book .cover{position:sticky;top:96px;justify-self:center}
+.pull{font-size:clamp(1.5rem,3vw,2.05rem);line-height:1.3;font-style:italic;color:var(--fig);margin:0 0 28px;max-width:24ch}
+.gardens{list-style:none;margin:28px 0 36px;padding:0;border-top:1px solid rgba(42,36,32,.2)}
+.gardens li{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid rgba(42,36,32,.2);font-size:1.05rem;line-height:1.5}
+.gardens strong{font-weight:600;color:var(--fig)}
+.buy{background:var(--moss);color:var(--dew);padding:clamp(24px,3vw,36px);border-radius:14px}
+.buy h3{font-weight:500;font-size:1.5rem;margin:0 0 4px;line-height:1.2}
+.buy .by{font-family:var(--sans);font-size:.9rem;opacity:.7;margin:0 0 20px}
+.buy .stack{display:grid;gap:12px;max-width:340px}
+.buy .note{font-family:var(--sans);font-size:.92rem;line-height:1.5;opacity:.88;margin:18px 0 0}
+.buy .note a{color:var(--gold)}
+.buy.live .when-soon{display:none}
+.buy:not(.live) .when-live{display:none}
+.soon-tag{display:block;background:var(--gold);color:var(--moss);font-family:var(--sans);font-weight:600;padding:14px 26px;border-radius:999px;text-align:center}
+
+/* ---------- about ---------- */
+.about{background:var(--fig);color:var(--dew)}
+.about .grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(32px,6vw,88px);align-items:center}
+.portrait{aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:var(--moss);max-width:360px}
+.portrait .ph{position:absolute;inset:0;align-items:center;justify-content:center;font-size:clamp(4rem,10vw,7rem);font-weight:500;color:var(--gold);background:linear-gradient(160deg,var(--leaf),var(--moss))}
+
+/* ---------- connect ---------- */
+.connect{background:var(--dew)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:8px 0 56px}
+.card{all:unset;box-sizing:border-box;cursor:pointer;display:block;background:#fff;border:1.5px solid rgba(42,36,32,.18);border-radius:14px;padding:26px;transition:border-color .2s,transform .2s}
+.card:hover{border-color:var(--fig);transform:translateY(-3px)}
+.card:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.card h3{font-weight:500;font-size:1.5rem;margin:0 0 8px;line-height:1.2}
+.card p{font-size:1rem;line-height:1.55;margin:0 0 16px}
+.card span{font-family:var(--sans);font-weight:600;font-size:.95rem;color:var(--fig)}
+.formgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,6vw,88px);align-items:start}
+.mail{font-size:1.25rem;color:var(--fig);word-break:break-word}
+form{display:grid;gap:18px;font-family:var(--sans)}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:10px}
+legend{font-size:.95rem;font-weight:500;padding:0;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips label{display:block}
+.chips input{position:absolute;opacity:0}
+.chips span{display:inline-block;padding:10px 18px;border:1.5px solid rgba(42,36,32,.3);border-radius:999px;font-size:.95rem;background:#fff;cursor:pointer}
+.chips input:checked + span{background:var(--moss);color:var(--dew);border-color:var(--moss)}
+.chips input:focus-visible + span{outline:3px solid var(--gold);outline-offset:2px}
+label.f{display:grid;gap:6px;font-size:.95rem;font-weight:500}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+input[type=text],input[type=email],input[type=tel],textarea{font:inherit;font-size:1rem;padding:13px 14px;border:1.5px solid rgba(42,36,32,.3);border-radius:8px;background:#fff;color:var(--bark);width:100%}
+input:focus,textarea:focus{outline:3px solid var(--gold);outline-offset:1px;border-color:var(--fig)}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start}
+.hp{position:absolute;left:-9999px}
+.status{font-size:1rem;margin:0;min-height:1.5em}
+
+/* ---------- give ---------- */
+.give{background:var(--moss);color:var(--dew)}
+.give .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,6vw,88px);align-items:center}
+.uses{list-style:none;margin:0 0 8px;padding:0;font-family:var(--sans);font-size:1rem}
+.uses li{padding:12px 0;border-bottom:1px solid rgba(238,242,234,.2)}
+.uses li:first-child{border-top:1px solid rgba(238,242,234,.2)}
+.give-box{background:var(--leaf);border-radius:14px;padding:clamp(24px,3vw,40px)}
+.give-box h3{font-weight:500;font-size:1.6rem;margin:0 0 10px;line-height:1.2}
+.give-box p{font-size:1rem;opacity:.9}
+.give-box a.mail2{color:var(--gold)}
+.give.live .when-soon{display:none}
+.give:not(.live) .when-live{display:none}
+
+
+.card.on{border-color:var(--fig);background:var(--mist)}
+.panel[hidden]{display:none}
+.panel h3{font-weight:500;font-size:1.5rem;margin:0;line-height:1.2;font-family:var(--serif)}
+.panel .hint{font-size:.95rem;margin:-8px 0 0;opacity:.8;max-width:none}
+.way{padding:16px 0;border-bottom:1px solid rgba(238,242,234,.2);font-family:var(--sans)}
+.way:first-of-type{border-top:1px solid rgba(238,242,234,.2)}
+.way h4{margin:0 0 6px;font-size:1.05rem;font-weight:600}
+.way .line{font-size:.98rem;opacity:.92;margin:0}
+.way .line b{font-weight:600}
+.copy{margin-top:10px;background:transparent;color:var(--gold);border:1.5px solid var(--gold);border-radius:999px;padding:6px 16px;font-family:var(--sans);font-size:.9rem;font-weight:600}
+.copy:hover{background:rgba(217,164,65,.15)}
+.give-box .stack{display:grid;gap:12px;max-width:340px;margin-top:8px}
+.give-box label.f{color:var(--dew)}
+.give-box input[type=text]{border-color:rgba(238,242,234,.3)}
+select{font:inherit;font-size:1rem;padding:13px 14px;border:1.5px solid rgba(42,36,32,.3);border-radius:8px;background:#fff;color:var(--bark);width:100%}
+
+footer{background:#0d1a15;color:var(--dew);padding:34px 0;font-family:var(--sans);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;opacity:.8}
+
+@media (max-width:860px){
+  .s-book .wrap,.book .grid,.about .grid,.formgrid,.give .grid{grid-template-columns:1fr}
+  .s-book .cover{justify-self:start;max-width:200px;order:-1}
+  .book .cover{position:static;justify-self:start;max-width:240px}
+  .cards{grid-template-columns:1fr}
+  .gardens li{grid-template-columns:1fr;gap:2px}
+  .slide .wrap{padding-bottom:110px}
+  .menu-btn{display:block}
+  .nav ul{display:none;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--moss);padding:8px var(--gutter) 20px;border-top:1px solid rgba(238,242,234,.15)}
+  .nav ul.open{display:flex}
+  .nav ul li{padding:12px 0;border-bottom:1px solid rgba(238,242,234,.1)}
+  .nav .pill{display:inline-block}
 }
-nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,0.25); }
-.nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.nav-brand-icon { width: 38px; height: 38px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--navy); flex-shrink: 0; }
-.nav-brand-text { font-family: var(--serif); font-size: 0.95rem; font-weight: 600; color: white; line-height: 1.2; }
-.nav-brand-sub { font-size: 0.58rem; font-weight: 400; color: rgba(255,255,255,0.45); letter-spacing: 0.1em; text-transform: uppercase; display: block; font-family: var(--sans); }
-.nav-links { display: flex; align-items: center; gap: 0.1rem; list-style: none; }
-.nav-links a { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; color: rgba(255,255,255,0.7); text-decoration: none; padding: 0.45rem 0.75rem; border-radius: var(--radius); transition: all 0.2s; }
-.nav-links a:hover { color: white; background: rgba(255,255,255,0.08); }
-.nav-links .nav-cta { background: var(--gold); color: var(--navy) !important; font-weight: 600; margin-left: 0.5rem; }
-.nav-links .nav-cta:hover { background: var(--gold-light) !important; }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
-.hamburger span { display: block; width: 22px; height: 2px; background: white; border-radius: 1px; transition: all 0.3s; }
-
-/* ── HERO ── */
-#hero {
-  min-height: 100vh; background: var(--navy);
-  display: flex; align-items: center; padding: 7rem 3rem 5rem;
-  position: relative; overflow: hidden;
-}
-.hero-bg-pattern {
-  position: absolute; inset: 0; pointer-events: none;
-  background-image: radial-gradient(circle, rgba(201,168,76,0.06) 1px, transparent 1px);
-  background-size: 36px 36px;
-}
-.hero-glow { position: absolute; top: -150px; right: -150px; width: 700px; height: 700px; background: radial-gradient(circle, rgba(201,168,76,0.08) 0%, transparent 65%); border-radius: 50%; pointer-events: none; }
-.hero-glow-2 { position: absolute; bottom: -200px; left: -100px; width: 600px; height: 600px; background: radial-gradient(circle, rgba(27,51,88,0.8) 0%, transparent 70%); border-radius: 50%; pointer-events: none; }
-.hero-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 380px; gap: 5rem; align-items: center; width: 100%; position: relative; z-index: 1; }
-.hero-tag { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(201,168,76,0.35); border-radius: 100px; padding: 0.3rem 1rem; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
-.hero-tag::before { content: '✦'; font-size: 0.5rem; }
-h1.hero-title { font-family: var(--serif); font-size: clamp(2.8rem, 5vw, 4.4rem); font-weight: 700; line-height: 1.1; color: white; margin-bottom: 1.2rem; }
-h1.hero-title em { font-style: italic; color: var(--gold); }
-.hero-sub { font-size: 1rem; color: rgba(255,255,255,0.62); line-height: 1.8; max-width: 460px; margin-bottom: 2rem; }
-.hero-verse { border-left: 3px solid var(--gold); padding: 0.8rem 1.2rem; margin-bottom: 2.5rem; font-family: var(--serif); font-style: italic; font-size: 0.95rem; color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.04); border-radius: 0 var(--radius) var(--radius) 0; }
-.hero-verse cite { display: block; font-style: normal; font-size: 0.7rem; color: var(--gold); margin-top: 0.3rem; font-family: var(--sans); font-weight: 600; letter-spacing: 0.1em; }
-.hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; gap: 8px; padding: 0.85rem 1.8rem; border-radius: var(--radius); font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; cursor: pointer; border: none; transition: all 0.2s; }
-.btn-gold { background: var(--gold); color: var(--navy); }
-.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.3); }
-.btn-white { background: transparent; color: white; border: 1.5px solid rgba(255,255,255,0.25); }
-.btn-white:hover { border-color: white; transform: translateY(-2px); }
-.btn-navy { background: var(--navy); color: white; }
-.btn-navy:hover { background: var(--navy-light); transform: translateY(-2px); }
-.btn-outline-navy { background: transparent; color: var(--navy); border: 1.5px solid var(--mid-gray); }
-.btn-outline-navy:hover { border-color: var(--navy); transform: translateY(-2px); }
-
-/* Book mockup */
-.hero-book { display: flex; justify-content: center; align-items: center; }
-.book-mockup { width: 240px; height: 340px; background: linear-gradient(145deg, var(--navy-light), var(--navy-mid)); border-radius: 4px 10px 10px 4px; box-shadow: -5px 5px 0 var(--gold), var(--shadow-lg), 15px 15px 50px rgba(0,0,0,0.4); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem 1.5rem; text-align: center; position: relative; overflow: hidden; cursor: pointer; transition: transform 0.3s; }
-.book-mockup:hover { transform: rotate(-1deg) scale(1.02); }
-.book-mockup::before { content: ''; position: absolute; top: 0; left: 0; bottom: 0; width: 7px; background: linear-gradient(to right, var(--gold), #b8963e); }
-.book-cover-img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; border-radius: 0 10px 10px 0; display: none; }
-.book-cover-placeholder { position: relative; z-index: 1; }
-.bc-ornament { font-size: 1.8rem; color: var(--gold); margin-bottom: 0.8rem; opacity: 0.9; }
-.bc-title { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; color: white; line-height: 1.1; margin-bottom: 0.4rem; }
-.bc-sub { font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
-.bc-line { width: 25px; height: 1px; background: var(--gold); margin: 0 auto 1.2rem; opacity: 0.6; }
-.bc-author { font-family: var(--serif); font-size: 0.75rem; font-style: italic; color: rgba(255,255,255,0.6); }
-.book-badge { position: absolute; top: -10px; right: -10px; background: var(--gold); color: var(--navy); font-size: 0.58rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.35rem 0.75rem; border-radius: 100px; box-shadow: 0 4px 12px rgba(201,168,76,0.4); }
-
-/* ── STATS ── */
-.stats-bar { background: white; border-bottom: 1px solid var(--mid-gray); padding: 1.5rem 3rem; display: flex; justify-content: center; gap: 0; flex-wrap: wrap; }
-.stat-item { padding: 0.8rem 3rem; text-align: center; border-right: 1px solid var(--mid-gray); }
-.stat-item:last-child { border-right: none; }
-.stat-num { font-family: var(--serif); font-size: 1.8rem; font-weight: 700; color: var(--navy); display: block; line-height: 1; }
-.stat-lbl { font-size: 0.62rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-light); margin-top: 0.2rem; }
-
-/* ── SECTION COMMONS ── */
-.section { padding: 5rem 3rem; }
-.section-alt { background: var(--off-white); }
-.section-navy { background: var(--navy); }
-.container { max-width: 1100px; margin: 0 auto; }
-.section-header { margin-bottom: 3rem; }
-.section-label { display: inline-flex; align-items: center; gap: 8px; font-size: 0.63rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
-.section-label::before { content: ''; display: block; width: 18px; height: 2px; background: var(--gold); border-radius: 1px; }
-.section-title { font-family: var(--serif); font-size: clamp(1.8rem, 3.5vw, 2.8rem); font-weight: 700; color: var(--text-dark); line-height: 1.2; margin-bottom: 0.75rem; }
-.section-title em { font-style: italic; color: var(--navy-light); }
-.section-title-white { color: white; }
-.section-title-white em { color: var(--gold); }
-.section-desc { font-size: 0.97rem; color: var(--text-mid); max-width: 540px; line-height: 1.75; }
-.section-desc-white { color: rgba(255,255,255,0.6); }
-
-/* ── THE BOOK ── */
-.book-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.book-upload-area { border: 2px dashed var(--mid-gray); border-radius: 12px; padding: 2rem; text-align: center; cursor: pointer; transition: all 0.2s; background: var(--light-gray); margin-bottom: 1.5rem; position: relative; overflow: hidden; min-height: 320px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.book-upload-area:hover { border-color: var(--navy); background: var(--navy-pale); }
-.book-upload-area input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-#book-cover-preview { width: 100%; max-width: 240px; margin: 0 auto; display: none; border-radius: 8px; box-shadow: var(--shadow-lg); }
-.upload-icon { font-size: 2.5rem; margin-bottom: 0.6rem; opacity: 0.4; }
-.upload-text { font-size: 0.83rem; color: var(--text-mid); }
-.upload-text strong { color: var(--navy); }
-.book-details h3 { font-family: var(--serif); font-size: 2rem; font-weight: 700; color: var(--text-dark); margin-bottom: 0.4rem; line-height: 1.15; }
-.book-tagline { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--gold); margin-bottom: 1.2rem; line-height: 1.5; }
-.book-details p { font-size: 0.95rem; color: var(--text-mid); line-height: 1.8; margin-bottom: 1rem; }
-.chapter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin: 1.5rem 0; }
-.chapter-item { display: flex; align-items: center; gap: 7px; font-size: 0.78rem; color: var(--text-mid); padding: 0.55rem 0.8rem; background: var(--light-gray); border-radius: var(--radius); }
-.chapter-item::before { content: '✦'; color: var(--gold); font-size: 0.45rem; flex-shrink: 0; }
-.buy-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; }
-
-/* ── ABOUT ── */
-.about-grid { display: grid; grid-template-columns: 360px 1fr; gap: 5rem; align-items: start; }
-.about-photo-wrap { position: relative; }
-.about-photo-area { border-radius: 16px; aspect-ratio: 3/4; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; position: relative; overflow: hidden; cursor: pointer; border: 2px dashed var(--mid-gray); background: var(--light-gray); transition: border-color 0.2s; }
-.about-photo-area:hover { border-color: var(--navy); }
-.about-photo-area input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-#about-photo-preview { width: 100%; height: 100%; object-fit: cover; display: none; position: absolute; inset: 0; border-radius: 14px; }
-.photo-placeholder { text-align: center; padding: 2rem; }
-.photo-placeholder .pi { font-size: 3rem; margin-bottom: 0.5rem; opacity: 0.25; }
-.photo-placeholder p { font-size: 0.78rem; color: var(--text-light); }
-.photo-placeholder strong { color: var(--navy); }
-.about-accent { position: absolute; bottom: -16px; right: -16px; width: 120px; height: 120px; background: var(--gold); border-radius: 12px; z-index: -1; opacity: 0.25; }
-.about-content p { font-size: 0.97rem; color: var(--text-mid); line-height: 1.85; margin-bottom: 1.2rem; }
-.about-content p:first-of-type::first-letter { font-family: var(--serif); font-size: 3.2rem; font-weight: 700; float: left; line-height: 0.8; margin: 0.1em 0.1em 0 0; color: var(--navy); }
-.ministry-note { background: var(--navy-pale); border-left: 3px solid var(--navy); border-radius: 0 var(--radius) var(--radius) 0; padding: 1.2rem 1.5rem; margin-top: 1.5rem; font-size: 0.85rem; color: var(--text-mid); line-height: 1.7; }
-.ministry-note strong { color: var(--navy); display: block; margin-bottom: 0.3rem; font-size: 0.88rem; }
-
-/* ── DEVOTIONALS ── */
-.devo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.devo-card { background: white; border: 1px solid var(--mid-gray); border-radius: 12px; padding: 1.8rem; transition: all 0.2s; cursor: pointer; }
-.devo-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--navy); }
-.devo-card.featured { grid-column: span 3; display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; background: var(--navy); border-color: var(--navy); }
-.devo-tag { display: inline-block; font-size: 0.6rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); background: var(--gold-pale); border-radius: 100px; padding: 0.2rem 0.75rem; margin-bottom: 0.8rem; }
-.devo-card.featured .devo-tag { background: rgba(201,168,76,0.15); }
-.devo-card h3 { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.6rem; line-height: 1.3; }
-.devo-card.featured h3 { color: white; font-size: 1.6rem; }
-.devo-card p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.7; margin-bottom: 1rem; }
-.devo-card.featured p { color: rgba(255,255,255,0.65); }
-.devo-link { font-size: 0.73rem; font-weight: 600; color: var(--navy); text-decoration: none; display: inline-flex; align-items: center; gap: 4px; transition: gap 0.2s; }
-.devo-card.featured .devo-link { color: var(--gold); }
-.devo-link:hover { gap: 10px; }
-.devo-link::after { content: '→'; }
-.devo-visual { background: rgba(255,255,255,0.05); border-radius: 10px; aspect-ratio: 4/3; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: rgba(201,168,76,0.25); }
-.coming-note { text-align: center; padding: 1.5rem; background: var(--light-gray); border-radius: 10px; margin-top: 1.5rem; font-size: 0.87rem; color: var(--text-light); }
-.coming-note strong { color: var(--navy); display: block; margin-bottom: 0.2rem; }
-
-/* ── TEACHINGS ── */
-.teachings-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
-.teaching-card { border: 1px solid var(--mid-gray); border-radius: 12px; padding: 1.8rem; transition: all 0.2s; background: white; }
-.teaching-card:hover { border-color: var(--navy); transform: translateY(-3px); box-shadow: var(--shadow); }
-.teaching-num { font-family: var(--serif); font-size: 2.5rem; font-weight: 700; color: rgba(10,22,40,0.07); line-height: 1; margin-bottom: 0.5rem; }
-.teaching-card h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.6rem; line-height: 1.3; }
-.teaching-card p { font-size: 0.84rem; color: var(--text-mid); line-height: 1.7; }
-.audio-placeholder { background: var(--light-gray); border-radius: 8px; padding: 0.9rem 1rem; margin-top: 1rem; display: flex; align-items: center; gap: 10px; font-size: 0.78rem; color: var(--text-light); }
-.play-btn { width: 30px; height: 30px; background: var(--navy); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 0.6rem; flex-shrink: 0; }
-.coming-tag { display: inline-flex; align-items: center; gap: 5px; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); margin-top: 0.8rem; }
-.coming-tag .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
-
-/* ── EVENTS ── */
-.events-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
-.event-card { background: white; border: 1px solid var(--mid-gray); border-radius: 12px; padding: 1.8rem; display: flex; gap: 1.5rem; align-items: flex-start; transition: all 0.2s; }
-.event-card:hover { border-color: var(--navy); box-shadow: var(--shadow); }
-.event-date { background: var(--navy); color: white; border-radius: 8px; padding: 0.8rem; text-align: center; min-width: 54px; flex-shrink: 0; }
-.ed-day { font-family: var(--serif); font-size: 1.5rem; font-weight: 700; line-height: 1; display: block; }
-.ed-mon { font-size: 0.58rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
-.event-info h3 { font-family: var(--serif); font-size: 1rem; font-weight: 600; color: var(--text-dark); margin-bottom: 0.3rem; }
-.event-info p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.6; margin-bottom: 0.4rem; }
-.event-location { font-size: 0.73rem; color: var(--text-light); display: flex; align-items: center; gap: 4px; }
-.no-events { grid-column: span 2; text-align: center; padding: 3rem; background: var(--light-gray); border-radius: 12px; }
-.no-events strong { font-family: var(--serif); font-size: 1.1rem; color: var(--navy); display: block; margin-bottom: 0.5rem; }
-.no-events p { font-size: 0.87rem; color: var(--text-light); }
-
-/* ── GALLERY ── */
-.gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; }
-.gallery-item { aspect-ratio: 1; border-radius: 10px; overflow: hidden; cursor: pointer; position: relative; background: var(--light-gray); border: 2px dashed var(--mid-gray); transition: all 0.2s; display: flex; align-items: center; justify-content: center; }
-.gallery-item:hover { border-color: var(--navy); }
-.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: none; position: absolute; inset: 0; }
-.gallery-add { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.3rem; }
-.gallery-add span { font-size: 1.8rem; color: var(--text-light); line-height: 1; }
-.gallery-add p { font-size: 0.68rem; color: var(--text-light); }
-.gallery-item input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
-
-/* ── INVITE ── */
-.invite-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.topics-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin: 1.5rem 0; }
-.topic-pill { background: var(--navy-pale); border-radius: var(--radius); padding: 0.6rem 0.9rem; font-size: 0.8rem; color: var(--navy); display: flex; align-items: center; gap: 6px; font-weight: 500; }
-.topic-pill::before { content: '✦'; color: var(--gold); font-size: 0.45rem; flex-shrink: 0; }
-.form-card { background: white; border: 1px solid var(--mid-gray); border-radius: 16px; padding: 2.5rem; }
-.form-card h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-dark); }
-.form-group { margin-bottom: 1.1rem; }
-.form-group label { display: block; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-mid); margin-bottom: 0.35rem; }
-.form-group input, .form-group select, .form-group textarea { width: 100%; background: var(--off-white); border: 1.5px solid var(--mid-gray); border-radius: var(--radius); padding: 0.8rem 1rem; font-family: var(--sans); font-size: 0.9rem; color: var(--text-dark); outline: none; transition: border-color 0.2s; }
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--navy); background: white; }
-.form-group textarea { resize: vertical; min-height: 100px; }
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.form-success { display: none; text-align: center; padding: 0.9rem; background: #EFF6FF; border-radius: var(--radius); color: var(--navy); font-size: 0.83rem; margin-top: 0.5rem; border: 1px solid rgba(10,22,40,0.1); }
-
-/* ── PRAYER ── */
-.prayer-wrap { max-width: 660px; margin: 0 auto; text-align: center; }
-.prayer-wrap p { color: var(--text-mid); font-size: 0.97rem; line-height: 1.8; margin-bottom: 2rem; }
-.prayer-form { background: white; border: 1px solid var(--mid-gray); border-radius: 16px; padding: 2.5rem; text-align: left; }
-.prayer-verse { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--text-mid); text-align: center; margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--mid-gray); line-height: 1.6; }
-.prayer-verse cite { display: block; font-style: normal; font-size: 0.7rem; color: var(--gold); font-family: var(--sans); font-weight: 600; margin-top: 0.3rem; letter-spacing: 0.1em; }
-
-/* ── DONATE ── */
-.donate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.donate-amounts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0; }
-.amount-btn { border: 2px solid var(--mid-gray); border-radius: 10px; padding: 1rem; text-align: center; cursor: pointer; transition: all 0.2s; background: white; }
-.amount-btn:hover, .amount-btn.active { border-color: var(--navy); background: var(--navy-pale); }
-.amount-btn .amt { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: var(--navy); display: block; }
-.amount-btn .lbl { font-size: 0.62rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.1em; }
-.purpose-list { margin: 1.5rem 0; }
-.purpose-item { display: flex; align-items: center; gap: 10px; padding: 0.75rem 0; border-bottom: 1px solid var(--mid-gray); font-size: 0.88rem; color: var(--text-mid); }
-.purpose-item::before { content: '✦'; color: var(--gold); font-size: 0.5rem; flex-shrink: 0; }
-.donate-note { background: var(--navy-pale); border-radius: var(--radius); padding: 1rem 1.2rem; font-size: 0.8rem; color: var(--text-mid); line-height: 1.65; margin-top: 1rem; }
-
-/* ── CONTACT ── */
-.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
-.contact-details { display: flex; flex-direction: column; gap: 1.2rem; margin: 1.5rem 0; }
-.contact-item { display: flex; gap: 1rem; align-items: flex-start; }
-.c-icon { width: 42px; height: 42px; background: var(--navy-pale); border: 1px solid var(--mid-gray); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0; }
-.c-text { font-size: 0.82rem; color: var(--text-light); line-height: 1.5; }
-.c-text strong { display: block; font-size: 0.88rem; color: var(--text-dark); margin-bottom: 0.1rem; }
-.c-text a { color: var(--navy); text-decoration: none; font-weight: 500; }
-.subscribe-box { background: var(--navy); border-radius: 12px; padding: 1.8rem; margin-top: 1.5rem; }
-.subscribe-box h4 { font-family: var(--serif); font-size: 1.1rem; color: white; margin-bottom: 0.4rem; }
-.subscribe-box p { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.65; margin-bottom: 1.2rem; }
-.subscribe-row { display: flex; gap: 0.5rem; }
-.subscribe-row input { flex: 1; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: var(--radius); padding: 0.75rem 1rem; font-family: var(--sans); font-size: 0.85rem; color: white; outline: none; }
-.subscribe-row input::placeholder { color: rgba(255,255,255,0.3); }
-.subscribe-row input:focus { border-color: var(--gold); }
-
-/* ── QUOTE BAND ── */
-.quote-band { background: var(--navy); padding: 5rem 3rem; text-align: center; position: relative; overflow: hidden; }
-.quote-band::before { content: '\201C'; position: absolute; left: 2rem; top: -2rem; font-family: var(--serif); font-size: 16rem; color: rgba(255,255,255,0.03); line-height: 1; pointer-events: none; }
-.quote-band blockquote { font-family: var(--serif); font-size: clamp(1.3rem, 3vw, 2.1rem); font-weight: 400; font-style: italic; color: white; max-width: 780px; margin: 0 auto; line-height: 1.5; position: relative; }
-.quote-band cite { display: block; font-family: var(--sans); font-size: 0.68rem; font-style: normal; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-top: 1.2rem; }
-
-/* ── FOOTER ── */
-footer { background: #060E1A; padding: 4rem 3rem 2rem; }
-.footer-top { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
-.fb-name { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; color: white; margin-bottom: 0.2rem; }
-.fb-url { font-size: 0.68rem; color: var(--gold); letter-spacing: 0.1em; margin-bottom: 1rem; }
-.footer-brand-col p { font-size: 0.8rem; color: rgba(255,255,255,0.38); line-height: 1.7; max-width: 210px; }
-.footer-col h4 { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 1rem; }
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; }
-.footer-col ul a { font-size: 0.82rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
-.footer-col ul a:hover { color: var(--gold); }
-.footer-bottom { max-width: 1100px; margin: 2rem auto 0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-.footer-bottom p { font-size: 0.7rem; color: rgba(255,255,255,0.25); }
-
-/* ── MOBILE ── */
-@media (max-width: 960px) {
-  nav { padding: 0 1.5rem; }
-  .nav-links { display: none; }
-  .nav-links.open { display: flex; flex-direction: column; position: fixed; top: 66px; left: 0; right: 0; bottom: 0; background: var(--navy); padding: 2rem 1.5rem; gap: 0.3rem; z-index: 998; overflow-y: auto; }
-  .nav-links.open a { font-size: 1rem; padding: 0.9rem 1rem; border-radius: 8px; color: rgba(255,255,255,0.8); }
-  .hamburger { display: flex; }
-  .hero-inner, .book-grid, .about-grid, .invite-grid, .donate-grid, .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-  .devo-card.featured { grid-column: span 1; grid-template-columns: 1fr; }
-  .devo-grid, .teachings-grid { grid-template-columns: 1fr; }
-  .events-grid { grid-template-columns: 1fr; }
-  .no-events { grid-column: span 1; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer-top { grid-template-columns: 1fr 1fr; }
-  .section { padding: 4rem 1.5rem; }
-  .stats-bar { padding: 1.2rem; }
-  .stat-item { padding: 0.7rem 1.5rem; }
-  .chapter-grid, .topics-list, .donate-amounts { grid-template-columns: 1fr; }
-  .form-row { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; text-align: center; }
-  .subscribe-row { flex-direction: column; }
-}
+@media (max-width:520px){ .two{grid-template-columns:1fr} }
+@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .slide{transition:none} .card{transition:none} }
 </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <a href="#hero" class="nav-brand">
-    <div class="nav-brand-icon">F</div>
-    <div class="nav-brand-text">Frederick Edem Apaloo<span class="nav-brand-sub">Author · Minister · Speaker</span></div>
-  </a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#book">The Book</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#devotionals">Devotionals</a></li>
-    <li><a href="#teachings">Teachings</a></li>
-    <li><a href="#events">Events</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="#invite">Speaking</a></li>
-    <li><a href="#prayer">Prayer</a></li>
-    <li><a href="#donate">Give</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
-  </ul>
-  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-pattern"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-glow-2"></div>
-  <div class="hero-inner">
-    <div>
-      <div class="hero-tag">Reverend &middot; Author &middot; Speaker</div>
-      <h1 class="hero-title">Guard Your Heart.<br><em>Guard Your Destiny.</em></h1>
-      <p class="hero-sub">Welcome. I'm Frederick Edem Apaloo — minister of the Gospel, author, and teacher. This is a space for teaching, transformation, and everything God is doing through this ministry.</p>
-      <div class="hero-verse">"Keep your heart with all diligence, for out of it spring the issues of life."<cite>&mdash; Proverbs 4:23</cite></div>
-      <div class="hero-btns">
-        <a href="#book" class="btn btn-gold">&#128214; Get The Book</a>
-        <a href="#invite" class="btn btn-white">&#9993; Invite Me to Speak</a>
-      </div>
-    </div>
-    <div class="hero-book">
-      <div style="position:relative;">
-        <div class="book-badge">New 2026</div>
-        <div class="book-mockup" onclick="document.getElementById('hero-book-upload').click()">
-          <img id="hero-book-img" class="book-cover-img" src="" alt="Book Cover">
-          <div class="book-cover-placeholder" id="hero-book-placeholder">
-            <div class="bc-ornament">&#10022;</div>
-            <div class="bc-title">The Eden Within</div>
-            <div class="bc-sub">Guard Your Heart</div>
-            <div class="bc-line"></div>
-            <div class="bc-author">Frederick Edem Apaloo</div>
-          </div>
-        </div>
-        <input type="file" id="hero-book-upload" accept="image/*" style="display:none" onchange="updateBookCover(this)">
-        <p style="text-align:center;font-size:0.68rem;color:rgba(255,255,255,0.3);margin-top:0.7rem;">Click cover to upload your image</p>
-      </div>
-    </div>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#home">Frederick E. Apaloo</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a class="link" href="#book">The book</a></li>
+        <li><a class="link" href="#about">About</a></li>
+        <li><a class="link" href="#connect">Book a session</a></li>
+      </ul>
+    </nav>
   </div>
-</section>
+</header>
 
-<!-- STATS -->
-<div class="stats-bar">
-  <div class="stat-item"><span class="stat-num">1</span><span class="stat-lbl">Published Book</span></div>
-  <div class="stat-item"><span class="stat-num">6</span><span class="stat-lbl">Core Teachings</span></div>
-  <div class="stat-item"><span class="stat-num">Ghana</span><span class="stat-lbl">Based In</span></div>
-  <div class="stat-item"><span class="stat-num">Global</span><span class="stat-lbl">Reach</span></div>
-</div>
+<main id="home">
 
-<!-- THE BOOK -->
-<section id="book" class="section">
-  <div class="container">
-    <div class="book-grid">
-      <div>
-        <div class="section-header">
-          <div class="section-label">My First Book</div>
-          <h2 class="section-title">The <em>Eden Within</em></h2>
-        </div>
-        <div class="book-upload-area" onclick="document.getElementById('book-cover-upload').click()">
-          <input type="file" id="book-cover-upload" accept="image/*" onchange="updateBookSection(this)">
-          <img id="book-cover-preview" src="" alt="Book Cover">
-          <div id="book-upload-placeholder">
-            <div class="upload-icon">&#128218;</div>
-            <div class="upload-text">Click to upload your book cover<br><strong>JPG or PNG recommended</strong></div>
-          </div>
-        </div>
-        <div class="buy-btns">
-          <a href="https://www.amazon.com" target="_blank" class="btn btn-gold">Buy on Amazon</a>
-          <a href="https://www.amazon.com/kindle" target="_blank" class="btn btn-outline-navy">Kindle Edition</a>
-        </div>
-      </div>
-      <div class="book-details">
-        <p class="book-tagline">"What if Eden was never just a location &mdash; but a condition of the heart?"</p>
-        <p>In <em>The Eden Within</em>, Frederick Apaloo takes readers on a profound journey through three gardens &mdash; Eden, Gethsemane, and the garden of the heart &mdash; where every person must decide daily between their own desires and the will of God.</p>
-        <p>This book is for the believer struggling in secret, the young person overwhelmed by desires they cannot control, and anyone who hungers for deeper intimacy with God.</p>
-        <div class="chapter-grid">
-          <div class="chapter-item">The Story of Three Gardens</div>
-          <div class="chapter-item">Old Eden &amp; The New Eden</div>
-          <div class="chapter-item">The Heart</div>
-          <div class="chapter-item">Desires of the Heart</div>
-          <div class="chapter-item">Heart of Stone, Heart of Flesh</div>
-          <div class="chapter-item">How to Keep Your Heart</div>
+  <!-- ============ HOME SLIDESHOW ============
+       Slides are defined in the SLIDES list in the script at the bottom. -->
+  <div class="show" role="region" aria-roledescription="carousel" aria-label="Featured">
+    <div class="slides" id="slides"></div>
+    <div class="controls">
+      <div class="wrap">
+        <div class="dots" id="dots"></div>
+        <div class="arrows">
+          <button class="arrow" id="prev" aria-label="Previous slide">&#8592;</button>
+          <button class="arrow" id="next" aria-label="Next slide">&#8594;</button>
         </div>
       </div>
     </div>
   </div>
-</section>
 
-<!-- QUOTE -->
-<div class="quote-band">
-  <blockquote>"The heart is now the garden. Every desire is a seed. Every thought is a planting. Every choice is cultivation."<cite>&mdash; The Eden Within, Chapter 6</cite></blockquote>
-</div>
+  <!-- ============ THE BOOK ============ -->
+  <section class="book" id="book">
+    <div class="wrap">
+      <div class="grid">
+        <!-- COVER: save as images/eden-within-cover.jpg -->
+        <figure class="slot cover">
+          <img src="images/eden-within-cover.jpg" alt="Cover of The Eden Within by Frederick E. Apaloo" onerror="this.parentElement.classList.add('empty')">
+          <div class="ph" aria-hidden="true"><small>FREDERICK E. APALOO</small><span><b>The Eden Within</b><br><i>Guard your heart</i></span></div>
+        </figure>
 
-<!-- ABOUT -->
-<section id="about" class="section section-alt">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-photo-wrap">
-        <div class="about-photo-area" onclick="document.getElementById('about-photo-upload').click()">
-          <input type="file" id="about-photo-upload" accept="image/*" onchange="updateAboutPhoto(this)">
-          <img id="about-photo-preview" src="" alt="Frederick Edem Apaloo">
-          <div class="photo-placeholder">
-            <div class="pi">&#128100;</div>
-            <p>Click to upload<br>your <strong>photo</strong></p>
-          </div>
-        </div>
-        <div class="about-accent"></div>
-      </div>
-      <div class="about-content">
-        <div class="section-label">About</div>
-        <h2 class="section-title">Called to Guard<br>the <em>Inner Man</em></h2>
-        <p>Frederick Edem Apaloo is a reverend minister, biblical teacher, and author dedicated to raising believers who are spiritually grounded and inwardly transformed. With a passion for Scripture and heart-centred discipleship, he teaches on purity, desire, relationships, and practical Christian living.</p>
-        <p>Through preaching, mentoring, and writing, Frederick calls this generation back to the one thing that matters most &mdash; the condition of the heart. He believes that when the inner man is right with God, every other area of life follows.</p>
-        <p>His ministry spans the pulpit, the printed page, and personal discipleship &mdash; always with one goal: helping people cultivate a heart that is fully surrendered to God.</p>
-        <div class="ministry-note">
-          <strong>&#10022; Ministry Affiliation</strong>
-          Frederick serves as a pastor at Victory Bible Church International, Ghana. His personal ministry, however, extends far beyond any single local church &mdash; reaching believers across Ghana and globally through writing, speaking, and digital outreach.
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DEVOTIONALS -->
-<section id="devotionals" class="section">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">Devotionals &amp; Reflections</div>
-      <h2 class="section-title">Words for the <em>Journey</em></h2>
-      <p class="section-desc">Short, Scripture-grounded reflections to water your heart daily.</p>
-    </div>
-    <div class="devo-grid">
-      <div class="devo-card featured">
         <div>
-          <span class="devo-tag">Featured</span>
-          <h3>God Still Walks in the Cool of the Day</h3>
-          <p>Adam and Eve heard the voice of the LORD walking in the garden. That voice has never stopped. The question is not whether God is seeking you &mdash; the question is what He will find when He arrives at the garden of your heart.</p>
-          <a href="#contact" class="devo-link">Read More</a>
-        </div>
-        <div class="devo-visual">&#10022;</div>
-      </div>
-      <div class="devo-card">
-        <span class="devo-tag">Devotional</span>
-        <h3>The Difference Between Love and Lust</h3>
-        <p>Lust says "I must have this, no matter the cost." Love says "I choose to give this up because I trust God." Understanding this changes everything.</p>
-        <a href="#contact" class="devo-link">Read More</a>
-      </div>
-      <div class="devo-card">
-        <span class="devo-tag">Teaching</span>
-        <h3>Six Signs Your Heart Has Grown Hard</h3>
-        <p>A hardened heart rarely announces itself. But the signs are always there for those willing to look honestly inward.</p>
-        <a href="#contact" class="devo-link">Read More</a>
-      </div>
-      <div class="devo-card">
-        <span class="devo-tag">Reflection</span>
-        <h3>What Joseph Knew That We Have Forgotten</h3>
-        <p>Joseph didn't stop to negotiate. He fled. What empowered him wasn't willpower &mdash; it was a heart fully aligned with God.</p>
-        <a href="#contact" class="devo-link">Read More</a>
-      </div>
-    </div>
-    <div class="coming-note"><strong>More devotionals coming soon</strong><a href="#contact" style="color:var(--navy);font-weight:600;">Subscribe to be notified &rarr;</a></div>
-  </div>
-</section>
+          <h2>The Eden Within</h2>
+          <p class="pull">What if Eden was never just a location, but a condition of the heart?</p>
+          <p>In <em>The Eden Within</em>, I take readers through three gardens: Eden, Gethsemane, and the garden of the heart. In each one, a person decides between their own desires and the will of God.</p>
+          <p>This book is for the believer struggling in secret, the young person overwhelmed by desires they cannot control, and anyone who hungers for deeper intimacy with God.</p>
 
-<!-- TEACHINGS -->
-<section id="teachings" class="section section-alt">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">Teachings</div>
-      <h2 class="section-title">Core <em>Teaching Themes</em></h2>
-      <p class="section-desc">Audio and video teachings coming soon. Subscribe below to be notified when new content is uploaded.</p>
-    </div>
-    <div class="teachings-grid">
-      <div class="teaching-card"><div class="teaching-num">01</div><h3>The Heart &amp; Spiritual Stewardship</h3><p>Guarding the heart as a garden &mdash; tended, watered, and surrendered to God daily.</p><div class="coming-tag"><div class="dot"></div>Coming Soon</div><div class="audio-placeholder"><div class="play-btn">&#9654;</div><span>Audio teaching uploading soon</span></div></div>
-      <div class="teaching-card"><div class="teaching-num">02</div><h3>Desires, Love &amp; Lust</h3><p>Understanding the driving forces of the inner life and aligning our hearts with God's will.</p><div class="coming-tag"><div class="dot"></div>Coming Soon</div><div class="audio-placeholder"><div class="play-btn">&#9654;</div><span>Audio teaching uploading soon</span></div></div>
-      <div class="teaching-card"><div class="teaching-num">03</div><h3>The Holy Spirit &amp; Power</h3><p>Living in the fullness of the Spirit &mdash; the baptism, the gifts, and the daily walk.</p><div class="coming-tag"><div class="dot"></div>Coming Soon</div><div class="audio-placeholder"><div class="play-btn">&#9654;</div><span>Audio teaching uploading soon</span></div></div>
-      <div class="teaching-card"><div class="teaching-num">04</div><h3>Relationships &amp; Purity</h3><p>Biblical wisdom for navigating relationships, sexuality, and commitment in today's world.</p><div class="coming-tag"><div class="dot"></div>Coming Soon</div><div class="audio-placeholder"><div class="play-btn">&#9654;</div><span>Audio teaching uploading soon</span></div></div>
-      <div class="teaching-card"><div class="teaching-num">05</div><h3>Faith, Sacrifice &amp; Destiny</h3><p>How embracing the cost of calling is what separates those who reach their destiny.</p><div class="coming-tag"><div class="dot"></div>Coming Soon</div><div class="audio-placeholder"><div class="play-btn">&#9654;</div><span>Audio teaching uploading soon</span></div></div>
-      <div class="teaching-card"><div class="teaching-num">06</div><h3>Prayer &amp; Intimacy with God</h3><p>Cultivating a deep, consistent prayer life as the foundation of a fruitful Christian walk.</p><div class="coming-tag"><div class="dot"></div>Coming Soon</div><div class="audio-placeholder"><div class="play-btn">&#9654;</div><span>Audio teaching uploading soon</span></div></div>
-    </div>
-  </div>
-</section>
+          <ul class="gardens">
+            <li><strong>Three gardens</strong><span>Eden, Gethsemane, and the heart</span></li>
+            <li><strong>Old and new Eden</strong><span>What was lost, and what has been restored</span></li>
+            <li><strong>Desires of the heart</strong><span>Where desire begins, and where it leads</span></li>
+            <li><strong>Stone and flesh</strong><span>Why a heart hardens, and how it softens</span></li>
+            <li><strong>Keeping your heart</strong><span>Practical ways to guard it every day</span></li>
+          </ul>
 
-<!-- EVENTS -->
-<section id="events" class="section">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">Upcoming</div>
-      <h2 class="section-title">Events &amp; <em>Programs</em></h2>
-      <p class="section-desc">Conferences, services, retreats and ministry programs. Check back regularly for updates.</p>
-    </div>
-    <div class="events-grid">
-      <div class="no-events">
-        <strong>No events scheduled yet</strong>
-        <p>Upcoming programs and events will appear here. <a href="#contact" style="color:var(--navy);font-weight:600;">Subscribe to be notified &rarr;</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery" class="section section-alt">
-  <div class="container">
-    <div class="section-header">
-      <div class="section-label">Gallery</div>
-      <h2 class="section-title">Photos &amp; <em>Moments</em></h2>
-      <p class="section-desc">Ministry moments, events, and milestones. Click any slot to add a photo.</p>
-    </div>
-    <div class="gallery-grid">
-      <div class="gallery-item" onclick="document.getElementById('gi0').click()"><input type="file" id="gi0" accept="image/*" onchange="addGalleryPhoto(this,0)"><img id="gimg0" src="" alt=""><div class="gallery-add" id="gadd0"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi1').click()"><input type="file" id="gi1" accept="image/*" onchange="addGalleryPhoto(this,1)"><img id="gimg1" src="" alt=""><div class="gallery-add" id="gadd1"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi2').click()"><input type="file" id="gi2" accept="image/*" onchange="addGalleryPhoto(this,2)"><img id="gimg2" src="" alt=""><div class="gallery-add" id="gadd2"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi3').click()"><input type="file" id="gi3" accept="image/*" onchange="addGalleryPhoto(this,3)"><img id="gimg3" src="" alt=""><div class="gallery-add" id="gadd3"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi4').click()"><input type="file" id="gi4" accept="image/*" onchange="addGalleryPhoto(this,4)"><img id="gimg4" src="" alt=""><div class="gallery-add" id="gadd4"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi5').click()"><input type="file" id="gi5" accept="image/*" onchange="addGalleryPhoto(this,5)"><img id="gimg5" src="" alt=""><div class="gallery-add" id="gadd5"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi6').click()"><input type="file" id="gi6" accept="image/*" onchange="addGalleryPhoto(this,6)"><img id="gimg6" src="" alt=""><div class="gallery-add" id="gadd6"><span>+</span><p>Add Photo</p></div></div>
-      <div class="gallery-item" onclick="document.getElementById('gi7').click()"><input type="file" id="gi7" accept="image/*" onchange="addGalleryPhoto(this,7)"><img id="gimg7" src="" alt=""><div class="gallery-add" id="gadd7"><span>+</span><p>Add Photo</p></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- SPEAKING / INVITE -->
-<section id="invite" class="section">
-  <div class="container">
-    <div class="invite-grid">
-      <div>
-        <div class="section-label">Speaking Invitations</div>
-        <h2 class="section-title">Invite Frederick<br>to <em>Speak</em></h2>
-        <p style="color:var(--text-mid);font-size:0.97rem;line-height:1.8;margin-bottom:1.5rem;">Frederick is available to minister at churches, conferences, retreats, youth events, and leadership gatherings. His messages are rooted in Scripture and designed to produce lasting transformation in the heart.</p>
-        <div class="topics-list">
-          <div class="topic-pill">Guarding the Heart</div>
-          <div class="topic-pill">Purity &amp; Relationships</div>
-          <div class="topic-pill">The Holy Spirit</div>
-          <div class="topic-pill">Destiny &amp; Sacrifice</div>
-          <div class="topic-pill">Faith &amp; Miracles</div>
-          <div class="topic-pill">Prayer &amp; Intimacy</div>
-          <div class="topic-pill">Leadership &amp; Character</div>
-          <div class="topic-pill">Youth Ministry</div>
+          <aside class="buy" id="buy" aria-label="Buy the book">
+            <h3>Get The Eden Within</h3>
+            <p class="by">by Frederick E. Apaloo</p>
+            <div class="stack when-live">
+              <a class="btn solid" id="amazon-btn" href="#" target="_blank" rel="noopener">Buy on Amazon</a>
+              <a class="btn ghost" id="kindle-btn" href="#" target="_blank" rel="noopener">Get the Kindle edition</a>
+            </div>
+            <div class="stack when-soon"><span class="soon-tag">Coming to Amazon soon</span></div>
+            <p class="note when-soon">Want to hear the day it goes live? <a href="mailto:frederickapaloo88@gmail.com?subject=Notify%20me%20about%20The%20Eden%20Within">Email me</a> and I'll let you know.</p>
+          </aside>
         </div>
       </div>
-      <div class="form-card">
-        <h3>Send an Invitation</h3>
-        <div class="form-row">
-          <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name"></div>
-          <div class="form-group"><label>Organisation</label><input type="text" placeholder="Church / ministry"></div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="grid">
+        <!-- PHOTO: save as images/frederick.jpg -->
+        <figure class="slot portrait">
+          <img src="images/frederick.jpg" alt="Frederick E. Apaloo" onerror="this.parentElement.classList.add('empty')">
+          <div class="ph" aria-hidden="true">FA</div>
+        </figure>
+        <div>
+          <h2>Called to guard the inner man</h2>
+          <p>I'm Frederick Apaloo, a reverend minister, biblical teacher and author. I want to see believers grounded in Scripture and changed from the inside.</p>
+          <p>I teach on purity, desire, relationships and the everyday work of following Christ. Through preaching, mentoring and writing, I call this generation back to the condition of the heart. When the inner man is right with God, every other area of life follows.</p>
         </div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+233..."></div>
-        <div class="form-group"><label>Event Type</label><select><option value="">Select event type&hellip;</option><option>Sunday Service</option><option>Conference</option><option>Youth Event</option><option>Retreat</option><option>Leadership Gathering</option><option>Other</option></select></div>
-        <div class="form-group"><label>Event Details</label><textarea placeholder="Event date, location, and what you need&hellip;"></textarea></div>
-        <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="submitForm('invite-success')">Send Invitation</button>
-        <div class="form-success" id="invite-success">&#10003; Invitation received. Frederick will be in touch within 48 hours.</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- PRAYER -->
-<section id="prayer" class="section section-alt">
-  <div class="container">
-    <div class="prayer-wrap">
-      <div class="section-label" style="justify-content:center;">Prayer</div>
-      <h2 class="section-title" style="text-align:center;">Submit a <em>Prayer Request</em></h2>
-      <p>No request is too small. Every prayer submitted here is taken before God personally. You are not alone in what you are facing.</p>
-      <div class="prayer-form">
-        <div class="prayer-verse">"Cast all your anxiety on Him because He cares for you."<cite>&mdash; 1 Peter 5:7</cite></div>
-        <div class="form-row">
-          <div class="form-group"><label>Your Name</label><input type="text" placeholder="First name is fine"></div>
-          <div class="form-group"><label>Email (optional)</label><input type="email" placeholder="For a personal response"></div>
+  <!-- ============ BOOK A SESSION / PRAYER / COUNSELING ============ -->
+  <section class="connect" id="connect">
+    <div class="wrap">
+      <h2>Book a session or ask for prayer</h2>
+      <p>Choose what you need and send a message. I read every one personally.</p>
+
+      <div class="cards">
+        <button type="button" class="card" data-panel="panel-prayer" aria-controls="panel-prayer">
+          <h3>Prayer</h3>
+          <p>Share what you are carrying. Your request is taken before God personally.</p>
+          <span>Request prayer</span>
+        </button>
+        <button type="button" class="card" data-panel="panel-counseling" aria-controls="panel-counseling">
+          <h3>Counseling</h3>
+          <p>A one-to-one conversation about your heart, relationships, purity or calling.</p>
+          <span>Book a session</span>
+        </button>
+        <button type="button" class="card" data-panel="panel-speaking" aria-controls="panel-speaking">
+          <h3>Speaking</h3>
+          <p>Invite me to minister at your church, conference, retreat or youth event.</p>
+          <span>Send an invitation</span>
+        </button>
+      </div>
+
+      <div class="formgrid">
+        <div>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.2rem)">Prefer to write directly?</h2>
+          <p><a class="mail" href="mailto:frederickapaloo88@gmail.com">frederickapaloo88@gmail.com</a></p>
         </div>
-        <div class="form-group"><label>Your Prayer Request</label><textarea placeholder="Share what is on your heart. This is a safe and confidential space&hellip;" style="min-height:120px;"></textarea></div>
-        <div class="form-group"><label>Would you like a personal response?</label><select><option>Yes &mdash; please email me back</option><option>No &mdash; just pray for me</option></select></div>
-        <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="submitForm('prayer-success')">Submit Prayer Request</button>
-        <div class="form-success" id="prayer-success">&#128591; Your request has been received. You are being prayed for.</div>
+
+        <div>
+          <!-- PRAYER -->
+          <form class="panel js-form" id="panel-prayer" name="prayer" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="prayer">
+            <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <h3>Request prayer</h3>
+            <p class="hint">No request is too small. You are not alone in what you are facing.</p>
+            <label class="f">Your name <input type="text" name="name" required autocomplete="name"></label>
+            <label class="f">Email (optional) <input type="email" name="email" autocomplete="email"></label>
+            <label class="f">Your prayer request <textarea name="request" required></textarea></label>
+            <fieldset>
+              <legend>Would you like a personal reply?</legend>
+              <div class="chips">
+                <label><input type="radio" name="reply" value="Yes, email me back"><span>Yes, email me back</span></label>
+                <label><input type="radio" name="reply" value="No, just pray for me" checked><span>No, just pray for me</span></label>
+              </div>
+            </fieldset>
+            <button class="btn dark" type="submit">Send prayer request</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- COUNSELING -->
+          <form class="panel js-form" id="panel-counseling" name="counseling" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="counseling">
+            <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <h3>Book a counseling session</h3>
+            <p class="hint">Tell me a little about what you would like to talk about, and when suits you.</p>
+            <div class="two">
+              <label class="f">Your name <input type="text" name="name" required autocomplete="name"></label>
+              <label class="f">Email <input type="email" name="email" required autocomplete="email"></label>
+            </div>
+            <label class="f">Phone or WhatsApp <input type="tel" name="phone" required autocomplete="tel"></label>
+            <fieldset>
+              <legend>What is it about?</legend>
+              <div class="chips">
+                <label><input type="radio" name="topic" value="Relationships" checked><span>Relationships</span></label>
+                <label><input type="radio" name="topic" value="Purity and desires"><span>Purity and desires</span></label>
+                <label><input type="radio" name="topic" value="Faith and calling"><span>Faith and calling</span></label>
+                <label><input type="radio" name="topic" value="Family"><span>Family</span></label>
+                <label><input type="radio" name="topic" value="Something else"><span>Something else</span></label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>How would you like to meet?</legend>
+              <div class="chips">
+                <label><input type="radio" name="format" value="Phone call" checked><span>Phone call</span></label>
+                <label><input type="radio" name="format" value="Video call"><span>Video call</span></label>
+                <label><input type="radio" name="format" value="In person"><span>In person</span></label>
+              </div>
+            </fieldset>
+            <label class="f">Preferred days or times <input type="text" name="preferred_time"></label>
+            <label class="f">A few words about what you need <textarea name="message" required></textarea></label>
+            <button class="btn dark" type="submit">Request a session</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- SPEAKING -->
+          <form class="panel js-form" id="panel-speaking" name="speaking" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" hidden>
+            <input type="hidden" name="form-name" value="speaking">
+            <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <h3>Invite me to speak</h3>
+            <div class="two">
+              <label class="f">Your name <input type="text" name="name" required autocomplete="name"></label>
+              <label class="f">Church or organisation <input type="text" name="organisation"></label>
+            </div>
+            <div class="two">
+              <label class="f">Email <input type="email" name="email" required autocomplete="email"></label>
+              <label class="f">Phone or WhatsApp <input type="tel" name="phone" autocomplete="tel"></label>
+            </div>
+            <div class="two">
+              <label class="f">Type of event
+                <select name="event_type">
+                  <option>Sunday service</option><option>Conference</option><option>Youth event</option>
+                  <option>Retreat</option><option>Leadership gathering</option><option>Other</option>
+                </select>
+              </label>
+              <label class="f">Date (if known) <input type="text" name="event_date"></label>
+            </div>
+            <label class="f">Event details <textarea name="message" required></textarea></label>
+            <button class="btn dark" type="submit">Send invitation</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- DONATE -->
-<section id="donate" class="section">
-  <div class="container">
-    <div class="donate-grid">
-      <div>
-        <div class="section-label">Give &amp; Partner</div>
-        <h2 class="section-title">Support the <em>Ministry</em></h2>
-        <p style="color:var(--text-mid);font-size:0.97rem;line-height:1.8;margin-bottom:1.5rem;">Your generosity makes this ministry possible &mdash; from publishing books to reaching people across Ghana and beyond with the Gospel. Every gift matters.</p>
-        <div class="purpose-list">
-          <div class="purpose-item">Book publishing &amp; distribution</div>
-          <div class="purpose-item">Teaching content &amp; recordings</div>
-          <div class="purpose-item">Ministry events &amp; outreach</div>
-          <div class="purpose-item">Youth &amp; discipleship programs</div>
-          <div class="purpose-item">Website &amp; digital ministry</div>
+  <!-- ============ GIVE ============ -->
+  <section class="give" id="give">
+    <div class="wrap">
+      <div class="grid">
+        <div>
+          <h2>Partner with the ministry</h2>
+          <p>This work grows through people who believe in it. If you would like to stand with it, I would love to hear from you and share how.</p>
+          <ul class="uses">
+            <li>Book publishing and distribution</li>
+            <li>Teaching content and recordings</li>
+            <li>Ministry events and outreach</li>
+            <li>Youth and discipleship programs</li>
+          </ul>
         </div>
-        <div class="donate-note">&#128155; All donations go directly to supporting the work of this ministry. For ministry partnerships or large gifts, please use the contact form.</div>
-      </div>
-      <div class="form-card">
-        <h3 style="font-family:var(--serif);font-size:1.4rem;margin-bottom:0.4rem;">Make a Donation</h3>
-        <p style="font-size:0.82rem;color:var(--text-light);margin-bottom:1.5rem;">Select an amount or enter your own</p>
-        <div class="donate-amounts">
-          <div class="amount-btn active" onclick="selectAmount(this)"><span class="amt">$10</span><span class="lbl">Seed</span></div>
-          <div class="amount-btn" onclick="selectAmount(this)"><span class="amt">$25</span><span class="lbl">Partner</span></div>
-          <div class="amount-btn" onclick="selectAmount(this)"><span class="amt">$50</span><span class="lbl">Supporter</span></div>
-        </div>
-        <div class="form-group"><label>Or Enter Amount (USD)</label><input type="number" placeholder="Custom amount"></div>
-        <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full name"></div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com"></div>
-        <div class="form-group"><label>Message (optional)</label><textarea placeholder="What is this gift toward?" style="min-height:70px;"></textarea></div>
-        <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="submitForm('donate-success')">Donate Now</button>
-        <div class="form-success" id="donate-success">&#128155; Thank you. Your generosity is greatly appreciated.</div>
-        <p style="font-size:0.7rem;color:var(--text-light);text-align:center;margin-top:0.8rem;">Payments processed securely via Payoneer.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- CONTACT -->
-<section id="contact" class="section section-alt">
-  <div class="container">
-    <div class="contact-grid">
-      <div>
-        <div class="section-label">Get in Touch</div>
-        <h2 class="section-title">Let's <em>Connect</em></h2>
-        <p style="color:var(--text-mid);font-size:0.97rem;line-height:1.8;">Whether you want to order the book, send a speaking invitation, ask a question, or simply connect &mdash; every message is read personally.</p>
-        <div class="contact-details">
-          <div class="contact-item"><div class="c-icon">&#9993;</div><div class="c-text"><strong>Email</strong><a href="mailto:frederickapaloo88@gmail.com">frederickapaloo88@gmail.com</a></div></div>
-          <div class="contact-item"><div class="c-icon">&#127760;</div><div class="c-text"><strong>Website</strong><a href="https://frederickapaloo.com">frederickapaloo.com</a></div></div>
-          <div class="contact-item"><div class="c-icon">&#128205;</div><div class="c-text"><strong>Location</strong>Accra, Ghana</div></div>
-        </div>
-        <div class="subscribe-box">
-          <h4>Stay Updated</h4>
-          <p>Subscribe to receive new devotionals, teaching notes, and ministry updates directly to your inbox.</p>
-          <div class="subscribe-row">
-            <input type="email" placeholder="your@email.com">
-            <button class="btn btn-gold" onclick="submitForm('sub-success')">Subscribe</button>
+        <div class="give-box" id="give-box">
+          <h3>Request giving details</h3>
+          <p>Message me and I will reply personally with the ways to give.</p>
+          <div class="stack">
+            <a class="btn solid" id="wa-btn" href="https://wa.me/233553231317?text=Hello%20Frederick%2C%20I%20would%20like%20to%20know%20more%20about%20partnering%20with%20the%20ministry." target="_blank" rel="noopener">Message on WhatsApp</a>
           </div>
-          <div class="form-success" id="sub-success" style="background:rgba(255,255,255,0.08);color:var(--gold-light);margin-top:0.5rem;">&#10003; You are subscribed!</div>
+          <form class="js-form" name="partner" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field" style="margin-top:28px">
+            <input type="hidden" name="form-name" value="partner">
+            <p class="hp"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <p class="hint" style="margin:0;font-size:.95rem;opacity:.85">Or leave your details and I will get back to you.</p>
+            <label class="f">Your name <input type="text" name="name" required autocomplete="name"></label>
+            <label class="f">Email or WhatsApp number <input type="text" name="contact" required></label>
+            <button class="btn solid" type="submit">Send</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+          <div id="give-ways"></div>
         </div>
-      </div>
-      <div class="form-card">
-        <h3 style="font-family:var(--serif);font-size:1.4rem;margin-bottom:1.5rem;">Send a Message</h3>
-        <div class="form-row">
-          <div class="form-group"><label>First Name</label><input type="text" placeholder="First name" required></div>
-          <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last name"></div>
-        </div>
-        <div class="form-group"><label>Email</label><input type="email" placeholder="your@email.com" required></div>
-        <div class="form-group"><label>Reason</label><select><option value="">Select a reason&hellip;</option><option>Book Enquiry</option><option>Speaking Invitation</option><option>Prayer Request</option><option>Ministry Partnership</option><option>Subscribe to Updates</option><option>Other</option></select></div>
-        <div class="form-group"><label>Message</label><textarea placeholder="Write your message here&hellip;"></textarea></div>
-        <button class="btn btn-gold" style="width:100%;justify-content:center;" onclick="submitForm('contact-success')">Send Message</button>
-        <div class="form-success" id="contact-success">&#10003; Message received. Frederick will be in touch soon.</div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand-col">
-      <div class="fb-name">Frederick Edem Apaloo</div>
-      <div class="fb-url">frederickapaloo.com</div>
-      <p>Author, minister and teacher. Helping people guard their hearts and walk faithfully with God.</p>
-    </div>
-    <div class="footer-col"><h4>Ministry</h4><ul><li><a href="#book">The Book</a></li><li><a href="#about">About</a></li><li><a href="#devotionals">Devotionals</a></li><li><a href="#teachings">Teachings</a></li><li><a href="#events">Events</a></li></ul></div>
-    <div class="footer-col"><h4>Connect</h4><ul><li><a href="#invite">Speaking</a></li><li><a href="#prayer">Prayer Request</a></li><li><a href="#donate">Give</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul></div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2026 Frederick Edem Apaloo. All rights reserved.</p>
-    <p>frederickapaloo.com</p>
+  <div class="wrap">
+    <span>© 2026 Frederick E. Apaloo</span>
+    <a href="#give" style="text-decoration:underline">Partner with the ministry</a>
   </div>
 </footer>
 
 <script>
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => navbar.classList.toggle('scrolled', window.scrollY > 60));
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
-navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+/* ===================================================================
+   1. LINKS: paste these when they are ready. Empty = "coming soon" state.
+   =================================================================== */
+var LINKS = {
+  amazon: "",   // e.g. "https://www.amazon.com/dp/XXXXXXXXXX"  (live in ~72 hours)
+  kindle: ""    // optional
+};
 
-function updateBookCover(input) {
-  if (!input.files[0]) return;
-  const url = URL.createObjectURL(input.files[0]);
-  const img = document.getElementById('hero-book-img');
-  img.src = url; img.style.display = 'block';
-  document.getElementById('hero-book-placeholder').style.display = 'none';
-}
-function updateBookSection(input) {
-  if (!input.files[0]) return;
-  const url = URL.createObjectURL(input.files[0]);
-  const p = document.getElementById('book-cover-preview');
-  p.src = url; p.style.display = 'block';
-  document.getElementById('book-upload-placeholder').style.display = 'none';
-}
-function updateAboutPhoto(input) {
-  if (!input.files[0]) return;
-  const url = URL.createObjectURL(input.files[0]);
-  const img = document.getElementById('about-photo-preview');
-  img.src = url; img.style.display = 'block';
-  document.querySelector('.photo-placeholder').style.display = 'none';
-}
-function addGalleryPhoto(input, i) {
-  if (!input.files[0]) return;
-  const url = URL.createObjectURL(input.files[0]);
-  const img = document.getElementById('gimg' + i);
-  img.src = url; img.style.display = 'block';
-  document.getElementById('gadd' + i).style.display = 'none';
-}
-function selectAmount(el) {
-  document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
-  el.classList.add('active');
-}
-function submitForm(id) {
-  const el = document.getElementById(id);
-  el.style.display = 'block';
-  setTimeout(() => el.style.display = 'none', 5000);
-}
+/* ===================================================================
+   GIVING: no account numbers are shown on the site. When you have a
+   payment link (Paystack, Flutterwave, Payoneer...), paste it here and a
+   "Give online" button appears in the Partner section.
+   =================================================================== */
+var GIVE = { online: "" };
 
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }});
-}, { threshold: 0.08 });
-document.querySelectorAll('.devo-card, .teaching-card, .event-card, .gallery-item, .stat-item, .chapter-item').forEach(el => {
-  el.style.opacity = '0'; el.style.transform = 'translateY(14px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  observer.observe(el);
-});
-</script> 
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</body> 
-</html> 
+/* ===================================================================
+   2. HOME SLIDESHOW: edit, reorder, add or delete slides here.
+   Types:  "book"  |  "quote"  |  "photo"
+   To add photos/events later, save the image in /images and add e.g.:
+   { type:"photo", image:"images/event-1.jpg", title:"Youth Conference 2026", text:"A short caption." },
+   =================================================================== */
+var SLIDES = [
+  { type:"book",
+    title:"The Eden Within",
+    text:"What if Eden was never just a location, but a condition of the heart?",
+    cta:{label:"Get the book", href:"#book"} },
 
+  { type:"quote",
+    text:"The heart is now the garden. Every desire is a seed. Every thought is a planting. Every choice is cultivation.",
+    cite:"Frederick E. Apaloo, The Eden Within" },
+
+  { type:"quote",
+    text:"Lust says, ‘I must have this, no matter the cost.’ Love says, ‘I choose to give this up because I trust God.’",
+    cite:"Frederick E. Apaloo" },
+
+  { type:"quote",
+    text:"A hardened heart rarely announces itself. But the signs are always there for those willing to look honestly inward.",
+    cite:"Frederick E. Apaloo" },
+
+  { type:"quote",
+    text:"Guard your heart. Guard your destiny.",
+    cite:"“Keep your heart with all diligence, for out of it spring the issues of life.” Proverbs 4:23",
+    cta:{label:"Book a session", href:"#connect"} }
+];
+
+(function(){
+  /* ---------- build slides ---------- */
+  var wrap = document.getElementById('slides');
+  var dots = document.getElementById('dots');
+  var COVER_PH = '<figure class="slot cover"><img src="images/eden-within-cover.jpg" alt="Cover of The Eden Within" onerror="this.parentElement.classList.add(\'empty\')"><div class="ph" aria-hidden="true"><small>FREDERICK E. APALOO</small><span><b>The Eden Within</b><br><i>Guard your heart</i></span></div></figure>';
+
+  function esc(s){ var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+  function cta(c){ return c ? '<a class="btn solid" href="'+esc(c.href)+'">'+esc(c.label)+'</a>' : ''; }
+
+  SLIDES.forEach(function(s,i){
+    var el = document.createElement('div');
+    el.className = 'slide' + (s.type==='book' ? ' s-book' : '');
+    el.setAttribute('role','group');
+    el.setAttribute('aria-roledescription','slide');
+    el.setAttribute('aria-label',(i+1)+' of '+SLIDES.length);
+    var html = '';
+    if (s.type==='book'){
+      html = '<div class="wrap"><div><h1>'+esc(s.title)+'</h1><p class="lead">'+esc(s.text)+'</p>'+cta(s.cta)+'</div>'+COVER_PH+'</div>';
+    } else if (s.type==='quote'){
+      html = '<div class="wrap"><blockquote style="max-width:none"><p class="q">“'+esc(s.text)+'”</p><span class="q-cite">'+esc(s.cite||'')+'</span></blockquote>'+(s.cta?'<div style="margin-top:28px">'+cta(s.cta)+'</div>':'')+'</div>';
+    } else if (s.type==='photo'){
+      el.classList.add('has-photo');
+      el.style.backgroundImage = 'url("'+s.image+'")';
+      html = '<div class="wrap"><p class="big">'+esc(s.title||'')+'</p><p class="lead">'+esc(s.text||'')+'</p>'+cta(s.cta)+'</div>';
+    }
+    el.innerHTML = html;
+    wrap.appendChild(el);
+
+    var d = document.createElement('button');
+    d.className='dot'; d.type='button';
+    d.setAttribute('aria-label','Go to slide '+(i+1));
+    d.addEventListener('click', function(){ go(i, true); });
+    dots.appendChild(d);
+  });
+
+  var slides = wrap.children, dotEls = dots.children, cur = 0, timer = null;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function go(n, user){
+    cur = (n + slides.length) % slides.length;
+    for (var i=0;i<slides.length;i++){
+      var on = i===cur;
+      slides[i].classList.toggle('active', on);
+      slides[i].setAttribute('aria-hidden', on ? 'false':'true');
+      if (on) { slides[i].removeAttribute('inert'); } else { slides[i].setAttribute('inert',''); }
+      if (on) dotEls[i].setAttribute('aria-current','true'); else dotEls[i].removeAttribute('aria-current');
+    }
+    if (user) restart();
+  }
+  function start(){ if (!reduce && slides.length>1) timer = setInterval(function(){ go(cur+1); }, 7500); }
+  function stop(){ clearInterval(timer); timer = null; }
+  function restart(){ stop(); start(); }
+
+  document.getElementById('prev').addEventListener('click', function(){ go(cur-1,true); });
+  document.getElementById('next').addEventListener('click', function(){ go(cur+1,true); });
+  var show = document.querySelector('.show');
+  show.addEventListener('mouseenter', stop);
+  show.addEventListener('mouseleave', start);
+  show.addEventListener('focusin', stop);
+  show.addEventListener('focusout', start);
+  document.addEventListener('visibilitychange', function(){ document.hidden ? stop() : start(); });
+  if (slides.length<2) document.querySelector('.controls').style.display='none';
+  go(0); start();
+
+  /* ---------- links: buy + give ---------- */
+  var buy = document.getElementById('buy');
+  if (LINKS.amazon){
+    document.getElementById('amazon-btn').href = LINKS.amazon;
+    var k = document.getElementById('kindle-btn');
+    if (LINKS.kindle) k.href = LINKS.kindle; else k.style.display='none';
+    buy.classList.add('live');
+  }
+  /* ---------- optional online giving link ---------- */
+  if (GIVE.online){
+    var ways = document.getElementById('give-ways');
+    ways.innerHTML = '<a class="btn ghost" style="margin-top:20px" target="_blank" rel="noopener" href="'+esc(GIVE.online)+'">Give online</a>';
+  }
+
+  /* ---------- mobile menu ---------- */
+  var mb = document.getElementById('menu-btn'), menu = document.getElementById('menu');
+  mb.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    mb.setAttribute('aria-expanded', open ? 'true':'false');
+  });
+  menu.addEventListener('click', function(e){ if (e.target.tagName==='A'){ menu.classList.remove('open'); mb.setAttribute('aria-expanded','false'); }});
+
+  /* ---------- request cards switch the form ---------- */
+  var cards = document.querySelectorAll('.card'), panels = document.querySelectorAll('.panel');
+  function showPanel(id, focus){
+    Array.prototype.forEach.call(panels, function(p){ p.hidden = (p.id !== id); });
+    Array.prototype.forEach.call(cards, function(c){
+      var on = c.getAttribute('data-panel') === id;
+      c.classList.toggle('on', on);
+      c.setAttribute('aria-expanded', on ? 'true' : 'false');
+    });
+    if (focus){
+      var p = document.getElementById(id);
+      p.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block:'start'});
+      setTimeout(function(){ var f = p.querySelector('input[type=text]'); if (f) f.focus({preventScroll:true}); }, 450);
+    }
+  }
+  Array.prototype.forEach.call(cards, function(c){
+    c.addEventListener('click', function(){ showPanel(c.getAttribute('data-panel'), true); });
+  });
+  showPanel('panel-prayer', false);
+
+  /* ---------- forms (Netlify Forms) ---------- */
+  Array.prototype.forEach.call(document.querySelectorAll('.js-form'), function(form){
+    var status = form.querySelector('.status');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      status.textContent = 'Sending…';
+      fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:new URLSearchParams(new FormData(form)).toString()})
+        .then(function(r){ if(!r.ok) throw 0; form.reset(); status.textContent = 'Received. Thank you, I will be in touch soon.'; })
+        .catch(function(){ status.textContent = 'That did not send. Please email frederickapaloo88@gmail.com directly.'; });
+    });
+  });
+})();
+</script>
+</body>
+</html>
